@@ -1,0 +1,12 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/MOFSPickerManager" "$PODS_CONFIGURATION_BUILD_DIR/Masonry-framework"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/MOFSPickerManager/MOFSPickerManager.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Masonry-framework/Masonry.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "MOFSPickerManager" -framework "Masonry"
+OTHER_LINKER_FLAGS = -ObjC
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/..
+PODS_ROOT = ${SRCROOT}/../Pods
+WEAK_REFERENCES_IN_MANUAL_RETAIN_RELEASE = Yes
